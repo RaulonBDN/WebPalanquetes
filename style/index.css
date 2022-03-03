@@ -84,23 +84,31 @@ input {
 
 /** Main section **/
 .main {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 5rem;
   margin-bottom: 5rem;
+}
+.main-image {
+  object-fit: cover;
+  width:100%;
+  height: auto;
 }
 
 /** Enviroment section **/
 .enviroment {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 5rem;
 }
 .enviroment-newsletter {
-  display: grid;
+  text-align: center;
 }
-.enviroment-login {
-  width: 30%;
+.enviroment-login__card {
   border: solid;
+  width: 50rem;
+  padding-left: 5rem;
+  padding-bottom: 5rem;
 }
 
 /** Utilidades **/
