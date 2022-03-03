@@ -49,6 +49,9 @@ input {
   border-style: solid;
   border-radius: 0;
 }
+input[type="checkbox"] {
+  height: auto;
+}
 
 /** Header **/
 .blue {
@@ -91,7 +94,7 @@ input {
 }
 .main-image {
   object-fit: cover;
-  width:100%;
+  width: 100%;
   height: auto;
 }
 
@@ -100,15 +103,23 @@ input {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 5rem;
+  justify-items: center;
 }
 .enviroment-newsletter {
   text-align: center;
 }
-.enviroment-login__card {
+.enviroment-login {
+  align-items: center;
   border: solid;
-  width: 50rem;
-  padding-left: 5rem;
-  padding-bottom: 5rem;
+  width: 70%;
+  padding: 5rem;
+  padding-top: 0;
+}
+.enviroment-login__item {
+  width: 100%;
+}
+.enviroment-login__item [type="checkbox"] {
+  all: initial;
 }
 
 /** Utilidades **/
