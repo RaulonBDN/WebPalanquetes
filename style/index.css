@@ -96,14 +96,18 @@ input[type="checkbox"] {
   object-fit: cover;
   width: 100%;
   height: auto;
+  box-shadow: 5px 13px 5px -8px rgba(0,0,0,0.75);
 }
 
 /** Enviroment section **/
 .enviroment {
   display: grid;
+  background-color: #4c7181;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 5rem;
   justify-items: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 .enviroment-newsletter {
   text-align: center;
