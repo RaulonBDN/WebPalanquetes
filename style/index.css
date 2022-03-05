@@ -32,6 +32,7 @@ h3,
 h4 {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: normal;
 }
 h1 {
   font-size: 4.8rem;
@@ -54,7 +55,7 @@ input[type="checkbox"] {
   height: auto;
 }
 section {
-  margin: 2rem 15rem;
+  margin: 2rem 5rem;
 }
 
 /** Header **/
@@ -130,7 +131,12 @@ section {
 }
 .enviroment-login {
   align-items: center;
-  border: solid;
+  background: rgba( 255, 255, 255, 0.4 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 6px );
+  -webkit-backdrop-filter: blur( 6px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
   width: 70%;
   padding: 5rem;
   padding-top: 0;
@@ -146,17 +152,17 @@ section {
 }
 
 /** Footer **/
-.gray {
-  background-color:#4d4d4d;
-}
+
 .footer {
+  background-color:#4d4d4d;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 5rem;
+  color: white;
+  padding: 0 15rem;
 }
 .footer__item {
   align-items: center;
-  text-align: center;
 }
 
 
