@@ -1,3 +1,6 @@
+:root {
+  --primary-color:#92a8d1;
+}
 html {
   box-sizing: border-box;
   font-size: 62.5%; /* 1 rem = 10 px */
@@ -18,9 +21,7 @@ body {
 
 /** Globales **/
 .contenedor {
-  max-width: 180rem;
-  width: 95%;
-  margin: 0 auto;
+  padding: 0 5rem;
 }
 a {
   text-decoration: none;
@@ -52,14 +53,24 @@ input {
 input[type="checkbox"] {
   height: auto;
 }
+section {
+  margin: 2rem 15rem;
+}
 
 /** Header **/
 .blue {
-  background-color: #4c7181;
+  background-color: var(--primary-color);
+}
+.white {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  width: 100%;
 }
 .barra-info {
   display: flex;
   color: white;
+  background-color: var(--primary-color);
   justify-content: space-between;
 }
 .barra-info__social {
@@ -102,7 +113,7 @@ input[type="checkbox"] {
 /** Enviroment section **/
 .enviroment {
   display: grid;
-  background-color: #4c7181;
+  background-color: var(--primary-color);
   grid-template-columns: repeat(2, 1fr);
   column-gap: 5rem;
   justify-items: center;
@@ -111,6 +122,11 @@ input[type="checkbox"] {
 }
 .enviroment-newsletter {
   text-align: center;
+  width: 60%;
+}
+.enviroment-newsletter {
+  text-align: center;
+  width: 60%;
 }
 .enviroment-login {
   align-items: center;
@@ -119,12 +135,30 @@ input[type="checkbox"] {
   padding: 5rem;
   padding-top: 0;
 }
+.enviroment-newsletter form input {
+  width: 1fr;
+}
 .enviroment-login__item {
   width: 100%;
 }
-.enviroment-login__item [type="checkbox"] {
-  all: initial;
+.enviroment-login__item[type="checkbox"] {
+  width: initial;
 }
+
+/** Footer **/
+.gray {
+  background-color:#4d4d4d;
+}
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 5rem;
+}
+.footer__item {
+  align-items: center;
+  text-align: center;
+}
+
 
 /** Utilidades **/
 .no-margin {
