@@ -12,13 +12,18 @@
 <body class="no-margin">
     <header>
         <div class="barra-info contenedor">
-            <div class="barra-info__contacto">
+            <div class="barra-info__1">
                 933 42 57 89 info@palanquetes.com                
             </div>
-            <div class="barra-info__social">
-                <a href="#insta" class="nav-enlace">Instagram</a>
-                <a href="#facebook">Facebook</a>                   
-                <a href="#twitter">Twitter</a>
+
+            <div class="barra-info__2">
+                <div class="barra-info__2__soc">
+                    <a href="#insta">Instagram</a>
+                    <a href="#facebook">Facebook</a>                   
+                    <a href="#twitter">Twitter</a>
+                </div>
+                <div class="verticalLine"></div>
+                <a href="login.html">Log In</a>
             </div>
         </div>    
         <div class="barra-main contenedor">
@@ -26,11 +31,31 @@
                 <img src="img/color-spectrum-gda03fb572_1920.png" alt="logo" height="50px" width="auto">                    
                 <h1>Palanquetes</h1>
             </div>
-            <div class="barra-main__nav">
-                <a href="#info" class="nav-enlace">Informació general</a>
-                <a href="#actualitat">Actualitat</a>
-                <a href="#moodle">Moodle</a>                
-            </div>      
+            <ul class="barra-main__nav">
+                <li>
+                    <a href="#info" class="barra-main__nav__list">Informació general</a>
+                    <ul>
+                        <li>
+                            <a href="#">General escola</a>
+                        </li>
+                        <li>
+                            <a href="#">Institució</a>
+                        </li>
+                        <li>
+                            <a href="#">On som</a>
+                        </li>
+                        <li>
+                            <a href="#">Serveis</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#actualitat">Actualitat</a>
+                </li>
+                <li>
+                    <a href="#moodle">Moodle</a>    
+                </li>       
+            </ul>      
         </div>
         
     </header>
@@ -45,8 +70,8 @@
         <div class="enviroment-newsletter">
             <h3>Rep les darreres notícies amb el nostre newsletter!</h3>
             <form action="#">
-                <input type="email" name="correo" id="correo" placeholder="Correu electrónic">
-                <input type="submit" name="enviar" id="enviar" placeholder="Enviar">
+                <input type="email" name="correo" id="correo" placeholder="Correu electrónic...">
+                <input class="btn" type="submit" name="enviar" id="enviar_newsletter" value="Enviar">
             </form>
         </div>
         <div class="enviroment-login">
@@ -58,8 +83,9 @@
                     <input class="enviroment-login__item" type="password" name="pass" id="password"><br>
                     <input class="enviroment-login__item" type="checkbox" name="save" id="save">
                     <label class="enviroment-login__item" for="save">Recorda aquest usuari</label><br>
-                    <input class="enviroment-login__item" type="submit" name="enviar" id="enviar" placeholder="Entrar">
+                    <input class="enviroment-login__item btn" type="submit" name="enviar" id="enviar" value="Entrar">
                 </form>  
+                <a href="">Crear cuenta nueva</a>
         </div>
     </section>
     <footer>
@@ -88,6 +114,15 @@
                     <li>c/ Carrer de Montmany Barcelona, Catalunya</li>
                 </ul>
             </div>
+            <h2 class="footer__item">
+                Drets reservats &copy;
+            </h2>
+            <div class="footer__item">
+                <a href="#insta"><img src="img/5296765_camera_instagram_instagram logo_icon.svg" alt="Instagram"></a>
+                <a href="#facebook"><img src="img/5296499_fb_facebook_facebook logo_icon.svg" alt="Facebook"></a>                   
+                <a href="#twitter"><img src="img/5296514_bird_tweet_twitter_twitter logo_icon.svg" alt="Twitter"></a>
+            </div>
+            
         </div>
     </footer>
     
