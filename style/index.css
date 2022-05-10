@@ -1,5 +1,5 @@
 :root {
-  --primary-color:#92a8d1;
+  --primary-color: #92a8d1;
 }
 html {
   box-sizing: border-box;
@@ -50,13 +50,14 @@ h4 {
 }
 input {
   height: 5rem;
-  border-style: solid;
-  border-radius: 0;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
 }
 input[type="checkbox"] {
   height: auto;
 }
-section {
+section,
+main {
   margin: 2rem 5rem;
 }
 ul {
@@ -99,28 +100,27 @@ ul {
   display: flex;
   width: 40%;
   justify-content: space-between;
+  font-size: 20px;
 }
+
 .barra-main__nav li {
-  transition: all 500ms ease;
+  padding: 0 2rem;
 }
-.barra-main__nav li ul{
-  display: none;
+.barra-main__nav li ul {
+  visibility: hidden;
+  height: 0;
   position: absolute;
+  background-color: white;
+  z-index: 1;
 }
-.barra-main__nav li:hover ul{
-  display: block;
-}
-.barra-main__nav li a{
-  transition: all 500ms ease;
-}
-.barra-main__nav li a:hover {
-  color: red;
+.barra-main__nav li:hover ul {
+  visibility: visible;
+  height: auto;
 }
 
 .barra-main__nav a {
   color: black;
 }
-
 
 /** Main section **/
 .main {
@@ -134,7 +134,7 @@ ul {
   align-self: center;
   width: 100%;
   height: auto;
-  box-shadow: 5px 13px 5px -8px rgba(0,0,0,0.75);
+  box-shadow: 5px 13px 5px -8px rgba(0, 0, 0, 0.75);
 }
 
 /** Enviroment section **/
@@ -144,24 +144,27 @@ ul {
   justify-content: space-evenly;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  
 }
 .enviroment-newsletter {
   max-width: 50%;
 }
-.enviroment-newsletter form input[type="email"]{
+.enviroment-newsletter form input[type="email"] {
   width: 50%;
 }
 .enviroment-login {
   align-items: center;
-  background: rgba( 255, 255, 255, 0.4 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 6px );
-  -webkit-backdrop-filter: blur( 6px );
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border: 1px solid rgba(255, 255, 255, 0.18);
   padding: 5rem;
   padding-top: 0;
+}
+
+.enviroment-login a:hover {
+  text-decoration: underline;
 }
 
 .enviroment-login__item {
@@ -174,7 +177,7 @@ ul {
 /** Footer **/
 
 .footer {
-  background-color:#4d4d4d;
+  background-color: #4d4d4d;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 5rem;
@@ -182,7 +185,7 @@ ul {
   padding: 0 15rem;
 }
 
-h2.footer__item  {
+h2.footer__item {
   grid-column: 2;
 }
 
@@ -190,7 +193,6 @@ h2.footer__item  {
   width: 6rem;
   margin: 0 2rem;
 }
-
 
 /** Utilidades **/
 .no-margin {
@@ -203,13 +205,4 @@ h2.footer__item  {
 }
 .verticalLine {
   border-left: thick solid #fff;
-}
-
-/** Responsive **/
-.mostrar {
-  display: block;
-}
-
-#register {
-  display: none;
 }

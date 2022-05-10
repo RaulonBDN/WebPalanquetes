@@ -1,136 +1,158 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Palanquetes, Col·legi, Web">
-    <meta name="author" content="Raul Oyagüe">
-    <link rel="stylesheet" href="style/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Palanquetes, Col·legi, Web" />
+    <meta name="author" content="Raul Oyagüe" />
+    <link rel="stylesheet" href="style/index.css" />
     <title>Col·legi Palanquetes</title>
-</head>
-<body class="no-margin">
+  </head>
+  <body class="no-margin">
     <header>
-        <div class="barra-info contenedor">
-            <div class="barra-info__1">
-                933 42 57 89 info@palanquetes.com                
-            </div>
+      <div class="barra-info contenedor">
+        <div class="barra-info__1">933 42 57 89 info@palanquetes.com</div>
 
-            <div class="barra-info__2">
-                <div class="barra-info__2__soc">
-                    <a href="#insta">Instagram</a>
-                    <a href="#facebook">Facebook</a>                   
-                    <a href="#twitter">Twitter</a>
-                </div>
-            </div>
-        </div>    
-        <div class="barra-main contenedor">
-            <div class="barra-main__logo">
-                <img src="img/color-spectrum-gda03fb572_1920.png" alt="logo" height="50">                    
-                <h1>Palanquetes</h1>
-            </div>
-            <ul class="barra-main__nav">
-                <li>
-                    <a href="#info" class="barra-main__nav__list">Informació general</a>
-                    <ul>
-                        <li>
-                            <a href="#">General escola</a>
-                        </li>
-                        <li>
-                            <a href="#">Institució</a>
-                        </li>
-                        <li>
-                            <a href="#">On som</a>
-                        </li>
-                        <li>
-                            <a href="#">Serveis</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#actualitat">Actualitat</a>
-                </li>
-                <li>
-                    <a href="#moodle">Moodle</a>    
-                </li>       
-            </ul>      
+        <div class="barra-info__2">
+          <div class="barra-info__2__soc">
+            <a href="#insta">Instagram</a>
+            <a href="#facebook">Facebook</a>
+            <a href="#twitter">Twitter</a>
+          </div>
         </div>
-        
+      </div>
+      <div class="barra-main contenedor">
+        <a class="barra-main__logo" href="index.html"
+          ><img
+            src="img/color-spectrum-gda03fb572_1920.png"
+            alt="logo"
+            height="50px"
+            width="auto"
+          />
+          <h1>Palanquetes</h1></a
+        >
+        <ul class="barra-main__nav">
+          <li>
+            <a href="#info" class="barra-main__nav__list">Informació general</a>
+            <ul>
+              <li>
+                <a href="#">General escola</a>
+              </li>
+              <li>
+                <a href="#">Institució</a>
+              </li>
+              <li>
+                <a href="#">On som</a>
+              </li>
+              <li>
+                <a href="#">Serveis</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#actualitat">Actualitat</a>
+          </li>
+          <li>
+            <a href="#moodle">Moodle</a>
+          </li>
+        </ul>
+      </div>
     </header>
-    <section class="enviroment contenedor" style="flex-direction: row;">
-        <div class="tab">
-            <button class="login">Login</button>
-            <button class="register">Register</button>
-        </div>
-        
-        <div class="tabcontent">
-            <div class="enviroment-login" id="login">
-                <h3>Entrada de membres</h3>
-                    <form action="#">
-                        <label class="enviroment-login__item" for="email">Correu electrónic</label><br>
-                        <input class="enviroment-login__item" type="email" name="email" id="correo"><br>
-                        <label class="enviroment-login__item" for="password">Contrasenya</label><br>
-                        <input class="enviroment-login__item" type="password" name="pass" id="password"><br>
-                        <input class="enviroment-login__item" type="checkbox" name="save" id="save">
-                        <label class="enviroment-login__item" for="save">Recorda aquest usuari</label><br>
-                        <input class="enviroment-login__item btn" type="submit" name="enviar" id="enviar" value="Entrar">
-                    </form>  
-            </div>
-
-            <div class="enviroment-login" id="register">
-                <h3>Entrada de membres</h3>
-                    <form action="#">
-                        <label class="enviroment-login__item" for="email">Correu electrónic</label><br>
-                        <input class="enviroment-login__item" type="email" name="email" id="correo"><br>
-                        <label class="enviroment-login__item" for="password">Contrasenya</label><br>
-                        <input class="enviroment-login__item" type="password" name="pass" id="password"><br>
-                        <input class="enviroment-login__item" type="checkbox" name="save" id="save">
-                        <label class="enviroment-login__item" for="save">Recorda aquest usuari</label><br>
-                        <input class="enviroment-login__item btn" type="submit" name="enviar" id="enviar" value="Entrar">
-                    </form>  
-            </div>
-        </div>
-        
-    </section>
+    <main class="contenedor enviroment">
+      <div class="enviroment-login">
+        <h3>Registre de membres</h3>
+        <form action="#">
+          <label class="enviroment-login__item" for="nom">Nom complet</label>
+          <input
+            class="enviroment-login__item"
+            type="text"
+            name="nom"
+            id="nom"
+          />
+          <label class="enviroment-login__item" for="email"
+            >Correu electrónic</label
+          ><br />
+          <input
+            class="enviroment-login__item"
+            type="email"
+            name="email"
+            id="correo"
+          />
+          <label class="enviroment-login__item" for="password"
+            >Contrasenya</label
+          >
+          <input
+            class="enviroment-login__item"
+            type="password"
+            name="pass"
+            id="password"
+          />
+          <input
+            class="enviroment-login__item"
+            type="checkbox"
+            name="save"
+            id="save"
+          />
+          <label class="enviroment-login__item" for="save"
+            >Recorda aquest usuari</label
+          >
+          <input
+            class="enviroment-login__item btn"
+            type="submit"
+            name="enviar"
+            id="enviar"
+            value="Entrar"
+          />
+        </form>
+      </div>
+    </main>
     <footer>
-        <div class="footer">
-            <div class="footer__item">
-                <p>Palanquetes</p>
-                <ul>
-                    <li>Qui sóm</li>
-                    <li>Condicions de compra</li>
-                    <li>Avís legal</li>
-                    <li>Privacitat</li>
-                </ul>
-            </div>
-            <div class="footer__item">
-                <p>Compra</p>
-                <ul>
-                    <li>Formes de pagament</li>
-                    <li>Despeses d'enviament</li>
-                    <li>Preguntes freqüents</li>
-                </ul>
-            </div>
-            <div class="footer__item">
-                <p>Contactar</p>
-                <ul>
-                    <li>+34 933 42 57 89</li>
-                    <li>c/ Carrer de Montmany Barcelona, Catalunya</li>
-                </ul>
-            </div>
-            <h2 class="footer__item">
-                Drets reservats &copy;
-            </h2>
-            <div class="footer__item">
-                <a href="#insta"><img src="img/5296765_camera_instagram_instagram logo_icon.svg" alt="Instagram"></a>
-                <a href="#facebook"><img src="img/5296499_fb_facebook_facebook logo_icon.svg" alt="Facebook"></a>                   
-                <a href="#twitter"><img src="img/5296514_bird_tweet_twitter_twitter logo_icon.svg" alt="Twitter"></a>
-            </div>
-            
+      <div class="footer">
+        <div class="footer__item">
+          <p>Palanquetes</p>
+          <ul>
+            <li>Qui sóm</li>
+            <li>Condicions de compra</li>
+            <li>Avís legal</li>
+            <li>Privacitat</li>
+          </ul>
         </div>
+        <div class="footer__item">
+          <p>Compra</p>
+          <ul>
+            <li>Formes de pagament</li>
+            <li>Despeses d'enviament</li>
+            <li>Preguntes freqüents</li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <p>Contactar</p>
+          <ul>
+            <li>+34 933 42 57 89</li>
+            <li>c/ Carrer de Montmany Barcelona, Catalunya</li>
+          </ul>
+        </div>
+        <h2 class="footer__item">Drets reservats &copy;</h2>
+        <div class="footer__item">
+          <a href="#insta"
+            ><img
+              src="img/5296765_camera_instagram_instagram logo_icon.svg"
+              alt="Instagram"
+          /></a>
+          <a href="#facebook"
+            ><img
+              src="img/5296499_fb_facebook_facebook logo_icon.svg"
+              alt="Facebook"
+          /></a>
+          <a href="#twitter"
+            ><img
+              src="img/5296514_bird_tweet_twitter_twitter logo_icon.svg"
+              alt="Twitter"
+          /></a>
+        </div>
+      </div>
     </footer>
-    
-</body>
-<script src="index.js"></script>
+  </body>
+  <script src="index.js"></script>
 </html>
-
