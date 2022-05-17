@@ -12,14 +12,7 @@
   <body class="no-margin">
     <header>
       <div class="barra-info contenedor">
-        <div class="barra-info__1">
-          <a href="usuari.html"
-            ><img
-              src="img/account_avatar_face_man_people_profile_user_icon_123197.svg"
-              alt="usuari"
-          /></a>
-          933 42 57 89 info@palanquetes.com
-        </div>
+        <div class="barra-info__1">933 42 57 89 info@palanquetes.com</div>
 
         <div class="barra-info__2">
           <div class="barra-info__2__soc">
@@ -27,8 +20,6 @@
             <a href="#facebook">Facebook</a>
             <a href="#twitter">Twitter</a>
           </div>
-          <div class="verticalLine"></div>
-          <a href="registre.html">Registre</a>
         </div>
       </div>
       <div class="barra-main contenedor">
@@ -68,41 +59,17 @@
         </ul>
       </div>
     </header>
-
-    <main class="main contenedor">
-      <h2 class="main-text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-        eligendi optio ab numquam culpa exercitationem totam animi fugiat
-        molestias? Magni!
-      </h2>
-      <img
-        class="main-image"
-        src="img/college-student-gc69e25dd3_1920.jpg"
-        alt="foto album"
-      />
-    </main>
-    <section class="enviroment contenedor">
-      <div class="enviroment-newsletter">
-        <h3>Rep les darreres notícies amb el nostre newsletter!</h3>
-        <form action="#">
-          <input
-            type="email"
-            name="correo"
-            id="correo"
-            placeholder="Correu electrónic..."
-          />
-          <input
-            class="btn"
-            type="submit"
-            name="enviar"
-            id="enviar_newsletter"
-            value="Enviar"
-          />
-        </form>
-      </div>
+    <main class="contenedor enviroment">
       <div class="enviroment-login">
-        <h3>Entrada de membres</h3>
+        <h3>Registre de membres</h3>
         <form action="#">
+          <label class="enviroment-login__item" for="nom">Nom complet</label>
+          <input
+            class="enviroment-login__item"
+            type="text"
+            name="nom"
+            id="nom"
+          />
           <label class="enviroment-login__item" for="email"
             >Correu electrónic</label
           ><br />
@@ -111,16 +78,16 @@
             type="email"
             name="email"
             id="correo"
-          /><br />
+          />
           <label class="enviroment-login__item" for="password"
             >Contrasenya</label
-          ><br />
+          >
           <input
             class="enviroment-login__item"
             type="password"
             name="pass"
             id="password"
-          /><br />
+          />
           <input
             class="enviroment-login__item"
             type="checkbox"
@@ -129,7 +96,7 @@
           />
           <label class="enviroment-login__item" for="save"
             >Recorda aquest usuari</label
-          ><br />
+          >
           <input
             class="enviroment-login__item btn"
             type="submit"
@@ -138,9 +105,8 @@
             value="Entrar"
           />
         </form>
-        <a href="registre.html">Crear cuenta nueva</a>
       </div>
-    </section>
+    </main>
     <footer>
       <div class="footer">
         <div class="footer__item">

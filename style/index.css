@@ -73,6 +73,19 @@ ul {
   background-color: var(--primary-color);
   justify-content: space-between;
 }
+
+.barra-info__1 {
+  display: flex;
+  align-items: center;
+}
+.barra-info__1 a {
+  height: 25px;
+  width: 25px;
+  margin-right: 1rem;
+  filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(293deg)
+    brightness(109%) contrast(101%);
+}
+
 .barra-info__2 {
   display: flex;
   justify-content: space-between;
@@ -183,7 +196,7 @@ ul {
   grid-template-columns: repeat(3, 1fr);
   column-gap: 5rem;
   color: white;
-  padding: 0 15rem;
+  padding: 2rem 15rem;
 }
 
 h2.footer__item {
@@ -214,7 +227,7 @@ h2.footer__item {
   border: 1px solid gray;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  column-gap: 2rem;
+  gap: 2rem;
 }
 
 .serveis__info {
@@ -252,4 +265,34 @@ h2.footer__item {
 .serveis__compra:hover {
   cursor: pointer;
   background-color: green;
+}
+
+/** Panel usuari **/
+.presentacion {
+  text-align: center;
+}
+.panel {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 1000px;
+  align-items: center;
+  justify-items: center;
+  margin: 0 auto;
+}
+
+.panel__card {
+  width: 300px;
+  height: 372px;
+  border: 1px solid gray;
+}
+
+.panel__card img {
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+
+.panel__card h3,
+p {
+  margin: 0 2rem;
 }
